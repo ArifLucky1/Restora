@@ -1,5 +1,6 @@
 import React from "react";
 import { navLinks } from "../data/data";
+import { MenuIcon } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -27,8 +28,25 @@ const Navbar = () => {
                 Book a table 
             </a>
 
+            <button className="md:hidden bg-zinc-800 text-white p-2 rounded-md aspect-square">
+              <MenuIcon  />
+            </button>
         </div>
       </nav>
+
+
+      {/* mobile navigation drawer */}
+      <div>
+        <div className="flex flex-col items-center space-y-6 font-medium">
+            {
+              navLinks.map((link) => (
+                <a href={link.href} key={link.name} className="text-2xl text-zinc-800 hover:text-orange-500 transition">
+                  {link.name}
+                </a>
+              ))
+            }
+        </div>
+      </div>
     </>
   );
 };
