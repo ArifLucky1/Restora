@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { navLinks } from "../data/data";
 import { MenuIcon } from "lucide-react";
 
 const Navbar = () => {
+
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <>
       <nav className="fixed top-0 z-20 px-auto w-full transition-all duration-300 bg-transparent">
@@ -36,7 +39,9 @@ const Navbar = () => {
 
 
       {/* mobile navigation drawer */}
-      <div>
+      <div className={`flex flex-col items-center justify-center p-8 fixed inset-0 bg-white/70 backdrop-blur-md z-40 transform transition-transform duration-300 ${
+        mobileOpen ? "translate-x-0" : "translate-x-full"
+      }`}>
         <div className="flex flex-col items-center space-y-6 font-medium">
             {
               navLinks.map((link) => (
