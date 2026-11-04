@@ -16,7 +16,7 @@ const HeroSection = () => {
       </Animated>
 
       <Animated delay={0.2}>
-        <p className="text-orange-600">WHERE FLAVOUR MEETS ELEGANCE</p>
+        <p className="text-zinc-600 max-w-md text-center mt-3">Experience carefully curated menus, fresh local ingredients and impeccable service in a space made for every celebration.</p>
       </Animated>
     
 
