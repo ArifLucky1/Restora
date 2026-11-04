@@ -10,7 +10,24 @@ const About = () => {
             <img src="/assets/about.png" alt="Dish" className='max-w-137 w-full h-full object-cover rounded-3xl' />
 
             </Animated>
+
          {/* Right Side: Content Details */}
+         <div>
+            <Animated scale={0.8} y={0} className="flex items-center gap-2">
+                <img src="/assets/iconL.png" alt="iconLeft" />
+                <span className='font-medium uppercase'>
+                    Crafted with Passion
+                </span>
+                <img src="/assets/iconR.png" alt="iconRight" />
+            </Animated>
+
+            <Animated scale={0.8} y={0} className="flex items-center gap-2">
+                <h2 className='mt-5 text-4xl md:text-5xl text-balance'>
+                    Experience dining beyond expectations
+                </h2>
+
+            </Animated>
+         </div>
         </div>
     </section>
   )
