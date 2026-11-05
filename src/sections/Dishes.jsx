@@ -4,8 +4,7 @@ import { dishes } from "../data/data";
 import { motion } from "motion/react";
 
 const Dishes = () => {
-
-    const [rotate, setRotate] = useState({});
+  const [rotate, setRotate] = useState({});
 
   return (
     <section id="dishes" className="px-auto mt-44">
@@ -30,6 +29,12 @@ const Dishes = () => {
             y={80}
             delay={index * 0.1}
             className="flex flex-col items-center text-center shrink-0 cursor-pointer"
+            onMouseEnter={() =>
+              setRotate((prev) => ({
+                ...prev,
+                [index]: (prev[index] || 0) + 180,
+              }))
+            }
           >
             <motion.div
               animate={{ rotate: rotate[index] || 0 }}
