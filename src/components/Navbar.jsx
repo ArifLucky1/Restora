@@ -17,11 +17,11 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 z-20 px-auto w-full transition-all duration-300 ${scrolled ? "bg-white/70 backdrop-blur-md" : "bg-transparent"} `}
+        className={`fixed top-0 z-20 px-20 w-full transition-all duration-300 ${scrolled ? "bg-white/70 backdrop-blur-md" : "bg-transparent"} `}
       >
-        <div className="flex items-center justify-between font-medium mx-auto max-w-7xl">
+        <div className="flex items-center justify-between font-medium mx-auto max-w-7xl p-2">
           <a href="/">
-            <img src="/assets/logo1.svg" alt="logo" className="w-30 h-30" />
+            <img src="/assets/logo1.svg" alt="logo" className="h-8 w-auto" />
           </a>
 
           {/* Desktop navigation links */}
