@@ -1,6 +1,7 @@
 import React from "react";
 import Animated from "../components/Animated";
 import { testimonials } from "../data/data";
+import { StarIcon } from "lucide-react";
 
 const Testimonial = () => {
   return (
@@ -30,7 +31,9 @@ const Testimonial = () => {
           >
             <div>
               <div>
-                
+                {[...Array(item.rating).map(() => (
+                    <StarIcon />
+                ))]}
               </div>
               <p className="text-zinc-600 leading-relaxed mb-6">"{item.review}"</p>
             </div>
