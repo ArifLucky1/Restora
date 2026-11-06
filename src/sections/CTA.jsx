@@ -1,5 +1,6 @@
 // Call To Action
 import React from "react";
+import Animated from "../components/Animated";
 
 const floatingDishes = [
   {
@@ -41,6 +42,21 @@ const CTA = () => {
                 hover:scale-105 ${dish.className}`}
           />
         ))}
+      </div>
+
+      <div className="relative z-10 text-center max-w-2xl mx-auto">
+        <Animated>
+            <h1 className="text-3xl md:text-[40px] font-medium text-white font-urbanist text-balance">
+                Every Meal Is Made To Be Remembered
+            </h1>
+        </Animated>
+        <Animated y={20} delay={0.2}>
+            <p className="mt-4 text-white max-w-sm mx-auto">
+                Join us for fresh ingredients, signature recipes and an unforgettable dining experience.
+            </p>
+        </Animated>
+
+        
       </div>
     </section>
   );
