@@ -1,7 +1,7 @@
 import React from 'react'
 import Animated from './Animated'
 import { quickLinks, socialLinks } from '../data/data'
-import { Mail } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -49,6 +49,12 @@ const Footer = () => {
                             <a href="mailto:yourmeal@restora.com" className='flex items-center gap-1 text-zinc-600 hover:text-zinc-500'>
                                 <Mail size={16} className='shrink-0' />
                                 yourmeal@restora.com
+                            </a>
+                        </Animated>
+                        <Animated delay={0.2}>
+                            <a href="tel:(+91-) 987-654-3210" className='flex items-center gap-1 text-zinc-600 hover:text-zinc-500'>
+                                <Phone size={16} className='shrink-0' />
+                                (+91) 987-654-3210
                             </a>
                         </Animated>
                     </div>
