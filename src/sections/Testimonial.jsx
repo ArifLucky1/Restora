@@ -35,6 +35,14 @@ const Testimonial = () => {
                 "{item.review}"
               </p>
             </div>
+
+            <div className="flex items-center gap-3 mt-auto">
+                <img src={item.avatar} alt={item.name} className="size-11 rounded-full object-cover shrink-0" />
+                <div>
+                    <p className="font-medium leading-tight mb-0.5">{item.name}</p>
+                    <p className="text-zinc-600">{item.location}</p>
+                </div>
+            </div>
           </Animated>
         ))}
       </div>
