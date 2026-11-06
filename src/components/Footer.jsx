@@ -1,6 +1,6 @@
 import React from 'react'
 import Animated from './Animated'
-import { socialLinks } from '../data/data'
+import { quickLinks, socialLinks } from '../data/data'
 
 const Footer = () => {
   return (
@@ -8,6 +8,7 @@ const Footer = () => {
         <div className='max-w-7xl mx-auto'>
             {/* row */}
             <div className='fle flex-wrap gap-6 justify-between pb-8'>
+
                 {/* Column 1 - Brand & Socials */}
                 <div className='flex flex-col items-start text-left'>
                     <Animated>
@@ -24,7 +25,20 @@ const Footer = () => {
                         ))}
                     </div>
                 </div>
+
                 {/* Column 2 - Quick Links */}
+                <div>
+                    <p className='font-medium mb-5'>Quick Links</p>
+                    <div className='flex flex-col gap-2.5'>
+                        {quickLinks.map((link, index) => (
+                            <Animated key={link.name} delay={index * 0.05}>
+                                <a href={link.href} className='text-zinc-600 hover:text-zinc-500'>
+                                    {link.name}
+                                </a>
+                            </Animated>
+                        ))}
+                    </div>
+                </div>
 
                 {/* Column 3 - Get in Touch */}
 
