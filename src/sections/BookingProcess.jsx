@@ -25,6 +25,11 @@ const BookingProcess = () => {
                         "{bookingTestimonial.quote}"
                     </p>
                 </Animated>
+                
+                <Animated delay={0.2} className="flex items-center justify-center md:justify-start gap-3">
+                    <img src={bookingTestimonial.authorImg} alt={bookingTestimonial.authorName} className='size-12 rounded-full object-cover'/>
+                    <span className='text-lg'>{bookingTestimonial.authorName}</span>
+                </Animated>
             </div>
 
             {/* Right Side */}
