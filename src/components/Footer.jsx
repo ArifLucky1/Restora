@@ -1,6 +1,6 @@
 import React from 'react'
 import Animated from './Animated'
-import { quickLinks, socialLinks } from '../data/data'
+import { quickLinks, sitemapLinks, socialLinks } from '../data/data'
 import { Mail, Phone } from 'lucide-react'
 
 const Footer = () => {
@@ -61,7 +61,20 @@ const Footer = () => {
                 </div>
 
                 {/* Column 4 - Sitemap */}
-
+                <div>
+                    <p className='font-medium mb-5'>Sitemap</p>
+                    <div className='flex flex-col gap-2.5'>
+                        {
+                            sitemapLinks.map((link, index) => (
+                                <Animated key={link.name} delay={index * 0.05}>
+                                    <a href={link.href} className='text-zinc-600 hover:text-zinc-500'>
+                                        {link.name}
+                                    </a>
+                                </Animated>
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
 
             {/* Bottom Bar */}
