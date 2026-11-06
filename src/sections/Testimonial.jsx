@@ -30,12 +30,10 @@ const Testimonial = () => {
             className="border border-slate-200 hover:bg-scale-50/50 rounded-2xl p-6 flex flex-col justify-between text-left"
           >
             <div>
-              <div>
-                {[...Array(item.rating).map(() => (
-                    <StarIcon />
-                ))]}
-              </div>
-              <p className="text-zinc-600 leading-relaxed mb-6">"{item.review}"</p>
+              <div className="flex gap-0.5 mb-4">{[...Array(item.rating)].map((_, i) => (<StarIcon key={i} className="size-4 fill-orange-500 text-orange-500"/>))}</div>
+              <p className="text-zinc-600 leading-relaxed mb-6">
+                "{item.review}"
+              </p>
             </div>
           </Animated>
         ))}
