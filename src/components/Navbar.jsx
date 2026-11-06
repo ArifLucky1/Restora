@@ -39,7 +39,7 @@ const Navbar = () => {
 
           <a
             href="#booking-process"
-            className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full transition"
+            className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
           >
             Book a table
           </a>

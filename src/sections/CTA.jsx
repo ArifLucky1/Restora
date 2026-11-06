@@ -1,6 +1,7 @@
 // Call To Action
 import React from "react";
 import Animated from "../components/Animated";
+import { ArrowRight } from "lucide-react";
 
 const floatingDishes = [
   {
@@ -56,7 +57,14 @@ const CTA = () => {
             </p>
         </Animated>
 
-        
+        <Animated delay={0.2} className="flex items-center justify-center transition-all duration-300 hover:scale-105">
+            <a href="#booking-process" className="flex items-center gap-2.5 bg-white text-black pl-5 pr-2 py-2 rounded-full mt-5.5 transition">
+                Book Your Table
+                <span className="size-7 rounded-full bg-black text-white grid place-content-center">
+                    <ArrowRight size={16} />
+                </span>
+            </a>
+        </Animated>
       </div>
     </section>
   );

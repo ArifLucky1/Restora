@@ -35,7 +35,7 @@ const About = () => {
             </p>
           </Animated>
           
-          <Animated className="mt-9 bg-orange-500 text-white p-2 pr-8 rounded-lg flex items-center gap-3 w-fit">
+          <Animated className="mt-9 bg-orange-500 text-white p-2 pr-8 rounded-lg flex items-center gap-3 w-fit transition-all duration-300 hover:scale-105">
             <img src="/assets/about.png" alt="South Delhi Location Preview" className="size-15 rounded-lg object-cover shrink-0" />
             <div className="flex flex-col gap-2">
                 <p className="font-medium">South Delhi, DL</p>

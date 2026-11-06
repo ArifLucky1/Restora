@@ -25,7 +25,7 @@ const Timing = () => {
                 ))}
             </div>
 
-                <Animated delay={0.2} className="mt-12 flex justify-center">
+                <Animated delay={0.2} className="mt-12 flex justify-center transition-all duration-300 hover:scale-105">
                     <a href="#booking-process" className='bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-full transition'>
                         Book a table
                         </a>
