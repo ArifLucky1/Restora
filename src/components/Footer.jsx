@@ -1,13 +1,14 @@
 import React from 'react'
 import Animated from './Animated'
 import { quickLinks, socialLinks } from '../data/data'
+import { Mail } from 'lucide-react'
 
 const Footer = () => {
   return (
     <footer className='px-auto relative mt-44 overflow-hidden'>
         <div className='max-w-7xl mx-auto'>
             {/* row */}
-            <div className='fle flex-wrap gap-6 justify-between pb-8'>
+            <div className='flex flex-wrap gap-6 justify-between pb-8'>
 
                 {/* Column 1 - Brand & Socials */}
                 <div className='flex flex-col items-start text-left'>
@@ -41,6 +42,17 @@ const Footer = () => {
                 </div>
 
                 {/* Column 3 - Get in Touch */}
+                <div>
+                    <p className='font-medium mb-5'>Get in Touch</p>
+                    <div className='space-y-2'>
+                        <Animated>
+                            <a href="mailto:yourmeal@restora.com" className='flex items-center gap-1 text-zinc-600 hover:text-zinc-500'>
+                                <Mail size={16} className='shrink-0' />
+                                yourmeal@restora.com
+                            </a>
+                        </Animated>
+                    </div>
+                </div>
 
                 {/* Column 4 - Sitemap */}
 
