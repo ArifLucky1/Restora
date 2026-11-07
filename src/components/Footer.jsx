@@ -105,6 +105,11 @@ const Footer = () => {
           </p>
         </div>
       </div>
+
+      {/* Watermark Logo backdrop */}
+      <div className="absolute inset-0 text-center select-none -z-1 pointer-events-none">
+        <span className="text-[270px] tracking-wide font-urbanist font-semibold text-zinc-100/80 ">Restora</span>
+      </div>
     </footer>
   );
 };
